@@ -16,7 +16,7 @@ return (NULL);
 
 if (parent->left)
 {
-new_node = 0-binary_tree_node(parent, value);
+new_node = binary_tree_node(parent, value);
 if (!new_node)
 return (NULL);
 new_node->left = parent->left;
@@ -25,7 +25,7 @@ parent->left = new_node;
 }
 else
 {
-parent->left = 0-binary_tree_node(parent, value);
+parent->left = binary_tree_node(parent, value);
 if (!parent->left)
 return (NULL);
 }
